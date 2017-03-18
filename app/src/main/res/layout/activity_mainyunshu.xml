@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+       >
+        <LinearLayout
+
+
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        <ImageView
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:id="@+id/imageView1"
+                android:src="@drawable/car11"
+                android:layout_gravity="center_horizontal" />
+        <Spinner
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"
+            style="@android:style/Theme.Holo.Light"
+            android:layout_weight="0.96" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/weightt1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:hint="重量（KG）"
+                android:id="@+id/edit_weight" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/scan_result"
+            android:padding="10dp"
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/car_result"
+            android:padding="10dp"
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_button"
+            android:padding="10dp"
+            android:src="@drawable/qrrcode11"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="点击图标开始"
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@android:drawable/ic_search_category_default"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先选择车辆信息"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再扫描二维码"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后放置传感器"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

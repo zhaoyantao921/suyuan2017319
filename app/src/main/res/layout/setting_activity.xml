@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/wrap_layout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/top_layout"
+        android:id="@+id/linearLayout1">
+        <TextView
+            style="@style/usertext"
+            android:id="@+id/textViewsen"
+            android:text="@string/sensitivity"
+           />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+             />
+        <ImageButton
+            android:id="@+id/button_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan32" />
+    </LinearLayout>
+    <View style="@style/bg_line"/>
+
+    <LinearLayout
+        style="@style/mid_layout"
+        android:layout_below="@+id/linearLayout1" >
+        <TextView
+            style="@style/usertext"
+            android:id="@+id/textViewpower"
+            android:text="@string/rfPower"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+
+        <ImageButton
+            android:id="@+id/button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan32"/>
+    </LinearLayout>
+    <View style="@style/bg_line"/>
+    <LinearLayout
+        style="@style/mid_layout"
+        android:id="@+id/linearLayout3"
+       >
+        
+        <TextView
+            android:id="@+id/textViewwork"
+            style="@style/usertext"
+            android:text="@string/workArea" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+        <ImageButton
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuan32"/>
+    </LinearLayout>
+    <View style="@style/bg_line"/>
+        <LinearLayout
+        style="@style/bottom_layout"
+        android:id="@+id/linearLayout4"
+        android:orientation="horizontal"
+            >
+        
+        <TextView
+            android:layout_weight="1"
+            style="@style/usertext"
+            android:id="@+id/textViewset"
+            android:text="@string/freqSetting" />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+            <ImageButton
+                android:id="@+id/buttonfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tuoyuan32" />
+    </LinearLayout>
+ </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="26dp"
+        />
+</LinearLayout>

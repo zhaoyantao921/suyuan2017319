@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    >
+
+
+    <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout"
+            android:id="@+id/version">
+            <TextView style="@style/usertext" android:text="关于软件" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+        <LinearLayout style="@style/mid_layout"
+            android:id="@+id/setactivity"
+            >
+            <TextView style="@style/usertext" android:text="参数设置" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout"
+            android:id="@+id/help"
+            >
+            <TextView style="@style/usertext" android:text="获取帮助" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/bg_line"/>
+
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout"
+            android:id="@+id/link"
+            >
+            <TextView style="@style/usertext" android:text="访问官网" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout"
+            android:id="@+id/update">
+            <TextView style="@style/usertext" android:text="检测更新" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout"
+            android:id="@+id/exit">
+            <TextView style="@style/usertext" android:text="退出程序"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
